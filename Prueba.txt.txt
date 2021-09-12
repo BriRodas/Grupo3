@@ -1,4 +1,9 @@
 Brian Rodas
+<<<<<<< Updated upstream
 Yomony Carlos Medina
 juan manuel tellez
 
+=======
+Yomony Carlos Medina - Bucaramanga
+Saludos compañeros
+>>>>>>> Stashed changes
