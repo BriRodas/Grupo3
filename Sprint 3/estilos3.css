@@ -1,0 +1,148 @@
+div{
+    box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: #34495e;
+}
+
+table{
+	border-radius: 24px;
+	/*background-color: #3d4e60;*/
+	/*background-color: none;*/
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+td,th{
+	padding: 6px;
+}
+
+th{
+	color: white;
+}
+
+#nombrecentral{
+	color: white;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.box h1{
+	color: white;
+}
+
+.box input[type="text"]{
+	width: 100px;
+	outline: 0;
+	border: 3px solid white;
+	color: black;
+	border-radius: 24px;
+	padding: 12px 18px;
+	text-align: center;
+}
+
+.box input[type="text"]:focus{
+	border-color: #3fc8Fa;
+}
+
+.box input[type="button"],.box input[type="reset"]{
+	height: 80px;
+	width: 100px;
+	border: 3px solid #2ecc71;
+	color: black;
+	border-radius: 24px;
+	margin: 20px auto;
+	transition: 0,25s;
+	text-align: center;
+	cursor: pointer;
+}
+.box input[type="button"]:hover,.box input[type="reset"]:hover{
+	background-color: #2ecc71;
+	color: white;	
+}
+
+.box img:hover{
+
+	border: 0;
+	outline: 0;
+	border-radius: 12px;
+	padding: 8px;
+	background-color: #00000070;
+	/*#3d4e6080*/
+}
+
+.contenedor{
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'nav nav nav'
+    'aside aside section'
+    'footer footer footer';
+    width: 45%;
+	/*background: #191919;*/
+	background-image: url(https://images.pexels.com/photos/1761279/pexels-photo-1761279.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	padding: 20px;
+	text-align: center;
+}
+
+#header{
+	height: 100px;
+	width: 640px;
+    grid-area: header;
+    background-color: white;
+    /*background-color: none;*/
+    padding: 12px;
+    text-align: center;
+    border-radius: 24px;
+    margin: 5px;
+}
+#nav{
+	height: 300px;
+	width: 640px;
+    grid-area: nav;
+    background-color: black;
+    color:white;
+    padding: 12px;
+    text-align: center;
+    border-radius: 24px;
+    margin: 2px;
+}
+.aside{
+	height: 700px;
+	width: 350px;
+    grid-area: aside;
+    background-color: gray;
+    text-align: center;
+    border-radius: 24px;
+    margin: 2px;
+}
+.section{
+	height: 700px;
+	width: 280px;
+    grid-area: section;
+    background-color: rgb(160, 194, 207);
+    text-align: center;
+    border-radius: 24px;
+    margin: 5px;
+    /*background-color: none;*/
+
+    
+}
+.footer{
+	height: 350px;
+	width: 640px;
+    grid-area: footer;
+    background-color: rgb(193, 180, 214);
+    padding: 12px;
+    text-align: center;
+    border-radius: 24px;
+    margin: 5px;
+}
