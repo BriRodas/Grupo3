@@ -24,5 +24,5 @@ function obtenerdatos(){
 }
 
 function boton(){
-	alert("Hola Seño");
+	alert("Hola");
 }
