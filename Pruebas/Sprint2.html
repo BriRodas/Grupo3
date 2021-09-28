@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Prueba</title>
+	</head>
+	<body bgcolor="#F9C5BB">
+		<center> <h1> Control </h1> </center>
+
+		<br><br>
+
+		<a href="https://www.google.com/intl/es-419/gmail/about/"> <img title="Gmail" width="200px" src="Imagen/Tecla-Ctrl.png"> </a>
+
+		<br><br><br>
+
+		<script languaje="javascript" type="text/javascript">
+
+			var cedula = prompt ("Escriba su cedula:");
+			var nombre = prompt ("Escriba su nombre:");
+			var apellido = prompt ("Escriba su Apellido:");
+			var edad = prompt ("Escriba su edad:");
+			var peso = prompt ("Escriba su peso en Kg:");
+			var talla = prompt ("Escriba su tala en m:");
+
+			edad1 = parseInt(edad);
+			a = parseFloat(peso);
+			b = parseFloat(talla);
+
+			c = a/(b**2);
+
+		</script>
+		<center>
+
+			<h1>Detalles</h1>
+
+			<br><br>
+
+			<table border="3" cellpadding="12">
+
+				<tr>
+					<th>Cedula</th>
+					<th>Nombre</th>
+					<th>Apellido</th>
+					<th>Edad</th>
+					<th>Peso (Kg)</th>
+					<th>Talla (m)</th>
+					<th>IMC</th>
+				</tr>
+				<tr>
+					<td> <script> document.write(cedula); </script> </td>
+					<td> <script> document.write(nombre); </script> </td>
+					<td> <script> document.write(apellido); </script> </td>
+					<td> <script> document.write(edad1); </script> </td>
+					<td> <script> document.write(a); </script> </td>
+					<td> <script> document.write(b); </script> </td>
+					<td> <script> document.write(c); </script> </td>
+				</tr>
+				
+			</table>
+		</center>
+	</body>
+</html>
