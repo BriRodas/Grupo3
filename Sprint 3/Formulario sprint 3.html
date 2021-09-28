@@ -1,145 +1,138 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 	<head>
+
+		<meta charset="utf-8">
+
 		<title>Formulario para calculo de IMC</title>
 
-		<script type="text/javascript">
+		<script type="text/javascript" src="funciones.js"></script>
 
-			function obtenerdatos(){
-				var cedula = document.getElementById("cedula").value;
-				var apellido = document.getElementById("apellido").value;
-				var nombre = document.getElementById("nombre").value;
-				var edad = document.getElementById("edad").value;
-				var peso = document.getElementById("peso").value;
-				var talla = document.getElementById("talla").value;
-
-				edad1 = parseInt(edad);
-
-				a = parseFloat(peso);
-
-				b = parseFloat(talla);
-
-				c = a / (b**2);
-
-				document.form.cedulaobtenido.value = cedula;
-				document.form.apellidoobtenido.value = apellido;
-				document.form.nombreobtenido.value = nombre;
-				document.form.edadobtenido.value = edad1;
-				document.form.pesoobtenido.value = a;
-				document.form.tallaobtenido.value = b;
-				document.form.imcobtenido.value = c;
-			}
-		</script>
 		<link rel="stylesheet" type="text/css" href="estilos3.css">
 
 	</head>
-	<body bgcolor="#F7D5CE">
+	<body>
+
+		<div id="img-fondo"></div>
 
 		<div class="contenedor">
+			
 	        <div id="header">
 
 	        	<h1>Calculadora de Indice de Masa Corporal</h1>
 
 	        </div>
 	        <div id="nav">
-				<a href="https://www.google.com/intl/es-419/gmail/about/"> <img style="float: left;" id="Ctrl" title="Si seño" width="100px" src="Tecla-Ctrl.png"> </a>
-	        	<center> <h1 id="nombrecentral">Control</h1> </center>
+				<img id="Ctrl" title="Si seño" width="100px" src="Tecla-Ctrl.png">
+
+	        	<center> <h1 id="nombrecentral">Ingresa tus datos</h1> </center>
 
 	        </div>
 	        <div class="aside" >
 
 	        	<form class="box">
 
-				<h1>Formulario</h1>
+	        		<center>
 
-				<table>
-					<tr>
-						<th align="left">Cedula:</th><td><input type="text" id="cedula" name="cedula" placeholder="Numero de la cedula"></td>
-					</tr>
+						<h1>Formulario</h1>
 
-					<tr>
-						<th align="left" >Apellido:</th><td><input type="text" id="apellido" name="apellido" placeholder="Primer apellido"></td>
-					</tr>
+						<table>
+							<tr>
+								<th align="left">Cedula:</th><td><input type="text" id="cedula" name="cedula" placeholder="Numero de la cedula"></td>
+							</tr>
 
-					<tr>
-						<th align="left" >Nombre:</th><td><input type="text" id="nombre" name="nombre" placeholder="Primer nombre"></td>
-					</tr>
+							<tr>
+								<th align="left" >Apellido:</th><td><input type="text" id="apellido" name="apellido" placeholder="Primer apellido"></td>
+							</tr>
 
-					<tr>
-						<th align="left" >Edad:</th><td><input type="text" id="edad" name="edad"></td>
-					</tr>
+							<tr>
+								<th align="left" >Nombre:</th><td><input type="text" id="nombre" name="nombre" placeholder="Primer nombre"></td>
+							</tr>
 
-					<tr>
-						<th align="left" >Peso:</th><td><input type="text" id="peso" name="peso" placeholder="Digitar en Kilogramos"></td>
-					</tr>
+							<tr>
+								<th align="left" >Edad:</th><td><input type="text" id="edad" name="edad"></td>
+							</tr>
 
-					<tr>
-						<th align="left" >Altura:</th><td><input type="text" id="talla" name="talla" placeholder="Digitar en Metros"></td>
-					</tr>
+							<tr>
+								<th align="left" >Peso:</th><td><input type="text" id="peso" name="peso" placeholder="Digitar en Kilogramos"></td>
+							</tr>
 
-				</table>
-				
-				<center>
-					<input id="btn1" type="button" value="Enviar" onclick="obtenerdatos()">
-					<input id="rst1" type="reset" value="Borrar datos"/>
-				</center>
-				
-			</form>
+							<tr>
+								<th align="left" >Altura:</th><td><input type="text" id="talla" name="talla" placeholder="Digitar en Metros"></td>
+							</tr>
+
+						</table>
+
+					</center>
+					
+					<center>
+						<input id="btn1" type="button" value="Enviar" onclick="obtenerdatos()">
+						<input id="rst1" type="reset" value="Borrar datos"/>
+					</center>
+					
+				</form>
 
 	        </div>
+
 	        <div class="section">
 
 	        	<form name="form" class="box">
-				<center>
+					<center>
 
-				<h1>Detalles</h1>
+						<h1>Detalles</h1>
 
-				<table>
+						<table>
 
-					<tr>
-						<td><input type="text" id="cedulaobtenido" name="cedulaobtenido" readonly></td>
-					</tr>
+							<tr>
+								<td><input type="text" id="cedulaobtenido" name="cedulaobtenido" readonly></td>
+							</tr>
 
-					<tr>
-						<td><input type="text" id="apellidoobtenido" name="apellidoobtenido" readonly></td>
-					</tr>
+							<tr>
+								<td><input type="text" id="apellidoobtenido" name="apellidoobtenido" readonly></td>
+							</tr>
 
-					<tr>
-						<td><input type="text" id="nombreobtenido" name="nombreobtenido" readonly></td>
-					</tr>
+							<tr>
+								<td><input type="text" id="nombreobtenido" name="nombreobtenido" readonly></td>
+							</tr>
 
-					<tr>
-						<td><input type="text" id="edadobtenido" name="edadobtenido" readonly></td>
-					</tr>
+							<tr>
+								<td><input type="text" id="edadobtenido" name="edadobtenido" readonly></td>
+							</tr>
 
-					<tr>
-						<td><input type="text" id="pesoobtenido" name="pesoobtenido" readonly></td>
-					</tr>
+							<tr>
+								<td><input type="text" id="pesoobtenido" name="pesoobtenido" readonly></td>
+							</tr>
 
-					<tr>
-						<td><input type="text" id="tallaobtenido" name="tallaobtenido" readonly></td>
-					</tr>
+							<tr>
+								<td><input type="text" id="tallaobtenido" name="tallaobtenido" readonly></td>
+							</tr>
 
-					<tr>
-						<td><input type="text" id="imcobtenido" name="imcobtenido" readonly></td>
-					</tr>
+							<tr>
+								<td><input type="text" id="imcobtenido" name="imcobtenido" readonly></td>
+							</tr>
 
-				</table>
-				</center>
-				<br><br>
+						</table>
+					</center>
+
+					<br><br>
 
 				</form>
 
 	        </div>
+
 	        <div class="footer">
 
 	        	<center><h1>Redes Sociales</h1>
 				
-				<a href="https://www.facebook.com"> <img src="facebook.png" title="Facebook" width="70"  align="center">   </a>
+				<a href="https://www.facebook.com"> <img src="facebook.png" title="Facebook" width="70"  align="center"></a>
 
-				<a href="https://www.google.com/intl/es-419/gmail/about/"> <img src="gmail.png" title="Gmail" width="70px" height="69px" align="center">   </a>
+				&nbsp;&nbsp;&nbsp;&nbsp;
 
-				<a href="https://www.youtube.com"> <img src="youtube.png" title="Youtube" width="70" height="101px" align="center" >   </a>
+				<a href="https://www.google.com/intl/es-419/gmail/about/"> <img src="gmail.png" title="Gmail" width="70px" height="69px" align="center"></a>
+
+				&nbsp;&nbsp;&nbsp;&nbsp;
+
+				<a href="https://www.youtube.com"> <img src="youtube.png" title="Youtube" width="70" height="101px" align="center"></a>
 				</center>
 			</div>
         </div>
