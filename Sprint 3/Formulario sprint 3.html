@@ -21,54 +21,45 @@
 
 	        </div>
 	        <div id="nav">
-
-				<img id="Ctrl" title="Tecla-Ctrl" width="100px" src="../Imagenes/Tecla-Ctrl.png" onclick="boton()">
-
-	        	<center> <h1 id="nombrecentral">Ingresa tus datos</h1> </center>
-
+					<img 
+						className="bottom"
+						id="Ctrl" 
+						title="Tecla-Ctrl" 
+						width="100px" 
+						src="../Imagenes/Tecla-Ctrl.png" 
+						onclick="boton()"
+					>
+				<h1 id="nombrecentral">Ingresa tus datos</h1>
 	        </div>
 	        <div class="aside" >
-
 	        	<form class="box">
-
 	        		<center>
-
 						<h1>Formulario</h1>
-
 						<table>
 							<tr>
 								<th align="left">Cedula:</th><td><input type="text" id="cedula" name="cedula" placeholder="Numero de la cedula"></td>
 							</tr>
-
 							<tr>
 								<th align="left" >Apellido:</th><td><input type="text" id="apellido" name="apellido" placeholder="Primer apellido"></td>
 							</tr>
-
 							<tr>
 								<th align="left" >Nombre:</th><td><input type="text" id="nombre" name="nombre" placeholder="Primer nombre"></td>
 							</tr>
-
 							<tr>
 								<th align="left" >Edad:</th><td><input type="text" id="edad" name="edad"></td>
 							</tr>
-
 							<tr>
 								<th align="left" >Peso:</th><td><input type="text" id="peso" name="peso" placeholder="Digitar en Kilogramos"></td>
 							</tr>
-
 							<tr>
 								<th align="left" >Altura:</th><td><input type="text" id="talla" name="talla" placeholder="Digitar en Metros"></td>
 							</tr>
-
 						</table>
-
 					</center>
-					
 					<center>
 						<input id="btn1" type="button" value="Enviar" onclick="obtenerdatos()">
 						<input id="rst1" type="reset" value="Borrar datos"/>
 					</center>
-					
 				</form>
 
 	        </div>

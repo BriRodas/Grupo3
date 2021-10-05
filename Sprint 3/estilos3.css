@@ -6,7 +6,7 @@ body{
 	margin: 0;
 	padding: 0;
 	font-family: sans-serif;
-	background: #34495e;
+	background: #939696;
 }
 
 #img-fondo{
@@ -16,6 +16,7 @@ body{
 	position: fixed;
 	left: 50%;
 	transform: translate(-50%);
+	opacity: 0.8;
 	padding: 20px;
 }
 
@@ -106,6 +107,11 @@ h1{
 	cursor: pointer;
 }
 
+#Ctrl:hover{
+	border: 4px solid rgb(30, 112, 189);
+	box-shadow: #3fc8Fa;
+}
+
 .contenedor{
     display: grid;
     grid-template-areas: 
@@ -135,16 +141,13 @@ h1{
 }
 
 #nav{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
     grid-area: nav;
     height: 100px;
-	/*width: 425px;*/
-    /*background-color: rgb(31, 195, 31);*/
-	background-color: none;
-    color:white;
-    padding: 12px;
     text-align: center;
-    border-radius: 24px;
-    margin: 35px;
 }
 
 .aside{

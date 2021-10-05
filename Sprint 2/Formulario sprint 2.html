@@ -14,11 +14,8 @@
 				var talla = document.getElementById("talla").value;
 
 				edad1 = parseInt(edad);
-
 				a = parseFloat(peso);
-
 				b = parseFloat(talla);
-
 				c = a / (b**2);
 
 				document.form.cedulaobtenido.value = cedula;
@@ -38,9 +35,17 @@
 		<hr>
 
 		<br><br>
-
-		<a href="https://www.google.com/intl/es-419/gmail/about/"> <img title="Gmail" width="150px" src="../Imagenes/Tecla-Ctrl.png"> </a>
-
+		<center>
+		<a href="https://www.google.com/intl/es-419/gmail/about/"
+		style="{color: #900}; 
+		:link {background: #ff0}; 
+		:visited {background: #fff}; 
+		:hover {outline: thin red solid}; 
+		:active {background: #00f};"
+		>
+			<img title="Gmail" width="150px" src="../Imagenes/Tecla-Ctrl.png"> 
+		</a>
+		</center>
 		<br><br><br>
 
 		<center> <h1>Formulario</h1> </center>
@@ -49,6 +54,7 @@
 
 		<form name="form">
 
+			<center>
 			<table border="3" cellpadding="12">
 				<tr>
 					<th>Cedula:</th><td><input type="text" id="cedula" name="cedula" placeholder="Numero de la cedula"></td>
@@ -78,8 +84,8 @@
 					<td><input type="button" value="Enviar" onclick="obtenerdatos()"></td>
 					<td><input type="reset" value="Borrar datos"/></td>
 				</tr>
-
 			</table>
+		</center>
 
 			<br><br><br><br>
 
@@ -92,55 +98,39 @@
 				<br><br>
 
 				<table border="3" cellpadding="12">
-
 					<tr>
 						<th>Cedula:</th><td><input type="text" id="cedulaobtenido" name="cedulaobtenido"></td>
 					</tr>
-
 					<tr>
 						<th>Apellido:</th><td><input type="text" id="apellidoobtenido" name="apellidoobtenido"></td>
 					</tr>
-
 					<tr>
 						<th>Nombre:</th><td><input type="text" id="nombreobtenido" name="nombreobtenido"></td>
 					</tr>
-
 					<tr>
 						<th>Edad:</th><td><input type="text" id="edadobtenido" name="edadobtenido"></td>
 					</tr>
-
 					<tr>
 						<th>Peso:</th><td><input type="text" id="pesoobtenido" name="pesoobtenido"></td>
 					</tr>
-
 					<tr>
 						<th>Talla:</th><td><input type="text" id="tallaobtenido" name="tallaobtenido"></td>
 					</tr>
-
 					<tr>
 						<th>IMC:</th><td><input type="text" id="imcobtenido" name="imcobtenido" readonly ></td>
 					</tr>
-
 				</table>
 			</center>
 		</form>
 
 		<br><br>
-
 		<hr>
-
 		<br>
-
 		<center><h1>Redes Sociales</h1></center>
-
-		<center> <a href="https://www.facebook.com"> <img src="facebook.png" title="Facebook" width="70"> </img> </a> </center>
-
+		<center> <a href="https://www.facebook.com"> <img src="../Imagenes/facebook.png" title="Facebook" width="70"> </img> </a> </center>
 		<br>
-
-		<center> <a href="https://www.google.com/intl/es-419/gmail/about/"> <img src="gmail.png" title="Gmail" width="70"> </img> </a> </center>
-
+		<center> <a href="https://www.google.com/intl/es-419/gmail/about/"> <img src="../Imagenes/gmail.png" title="Gmail" width="70"> </img> </a> </center>
 		<br>
-
-		<center> <a href="https://www.youtube.com"> <img src="youtube.png" title="Youtube" width="70"> </img> </a> </center>
+		<center> <a href="https://www.youtube.com"> <img src="../Imagenes/youtube.png" title="Youtube" width="70"> </img> </a> </center>
 	</body>
 </html>
