@@ -5,6 +5,7 @@ $("#c-btn").hide();
 function obtenerdatos() {
 
 	$("#c-btn").show();
+	$('#recomendaciones').hide();
 
 	var cedula = document.getElementById("cedula").value;
 	var apellido = document.getElementById("apellido").value;
@@ -93,6 +94,7 @@ function mostrarRc(){
 
 function ocultarRc(){
 	$("#c-btn").hide();
+	$('#recomendaciones').hide();
 }
 
 // Botón Ctrl
