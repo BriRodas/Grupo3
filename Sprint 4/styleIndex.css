@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background: url(./img/bg2.png);
+    background-size: cover;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+}
+
+header a img {
+    height: 60px;
+}
+    
+ header div a img {
+    height: 30px;
+    margin-right: 20px;
+}
+
+.body {
+    background: url(./img/bg1.png);
+    background-size: cover;
+    height: 80%;
+    opacity: 0.8;
+    display: flex;
+    align-items: flex-end;
+}
+
+.body p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    color: white;
+    line-height: 60px;
+    position: relative;
+    margin-left: 40px;
+    text-decoration: none;
+    list-style: none;
+    text-decoration-line: none;
+}
+
+.body a {
+    text-decoration: none;
+}
+
+.body p:hover {
+    color: rgb(128, 236, 78);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 10%;
+    margin-right: 40px;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+    
+ footer img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+footer span {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: gray;
+}
