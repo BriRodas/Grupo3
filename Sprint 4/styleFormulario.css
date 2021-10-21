@@ -1,0 +1,161 @@
+div {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: url(./img/bg2.png);
+  background-size: cover;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+header a img {
+  height: 60px;
+}
+
+header div a img {
+  height: 30px;
+  margin-right: 20px;
+}
+
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 70%;
+  opacity: 0.8;
+}
+
+.body h1 {
+  color: #2596be;
+  text-align: center;
+}
+
+.bodyDos {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 80%;
+  opacity: 0.8;
+}
+
+form span {
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+}
+
+.bodyDos h1 {
+  color: #2596be;
+  text-align: center;
+}
+
+form {
+  background-color: #2596be;
+  width: 400px;
+  height: 80%;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+form div {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 5px 20px;
+
+}
+
+form p {
+  color: white;
+  font-weight: 600;
+  width: 80px;
+}
+
+form input {
+  width: 100%;
+  height: 40px;
+  margin-left: 10px;
+}
+
+form input:focus {
+  border: none;
+  outline: none;
+}
+
+form input:active {
+  border: none;
+}
+
+div span {
+  text-align: center;
+}
+
+.buttom {
+  justify-content: flex-end;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.buttom input {
+  background-color: white;
+  width: 150px;
+  cursor: pointer;
+  color: #2596be;
+  font-weight: 600;
+  border: none;
+  border-radius: 20px;
+}
+
+.buttom input:hover{
+  background-color: #4224c9;
+  color: white;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 10%;
+}
+
+footer div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+}
+
+footer img {
+  height: 50px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+footer span {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: gray;
+}
