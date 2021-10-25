@@ -22,18 +22,18 @@ header {
 header a img {
     height: 60px;
 }
-    
- header div a img {
+
+header div a img {
     height: 30px;
     margin-right: 20px;
 }
 
 .body {
-    background: url(./img/bg1.png);
-    background-size: cover;
-    height: 80%;
-    opacity: 0.8;
     display: flex;
+    background-image: url(./img/bg1.png);
+    background-size: cover;
+    height: 100vmax;
+    opacity: 0.8;
     align-items: flex-end;
 }
 
@@ -65,6 +65,7 @@ footer {
     flex-direction: row;
     height: 10%;
     margin-right: 40px;
+    margin-bottom: 40px;
 }
 
 footer div {
@@ -72,9 +73,10 @@ footer div {
     align-items: center;
     justify-content: center;
     margin-left: 50px;
+    margin-top: 20px;
 }
-    
- footer img {
+
+footer img {
     height: 50px;
     margin-right: 20px;
 }
